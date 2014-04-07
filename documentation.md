@@ -16,7 +16,7 @@ Da die Ausgabe von Qhull eine Punktmenge liefert, müssen zum darstellen der Zel
 Unsere Finale Lösung ist die Open Source Java Bibliothek QuickHull3D.
 Die nun berechneten Zellen werden in dem Objekt "Immutable Mesh" verpackt und zum Darstellen weitergeschickt.
 
-![Schema](schema.svg)
+![Schema](schema.png)
 
 #### Probleme/Herausforderungen
 Die erste Herrausforderung war eine geeignete Lösung zum berechnen des Voronoi Diagrammes zu finden. Erfolglos waren wir zu beginnt auf der suche nach einer Java Bibliothek, die dieser Aufgabe gewachsen ist.
