@@ -5,19 +5,23 @@
 Für die Berechnung der 3 dimensionalen Voronoi Zellen wurde von uns das Programm QHull gewählt. QHull ist ein in C geschriebenes Programm zum Berechnen von unter anderem Delaunay Triangulationen, konvexen Hüllen und Voronoi Diagrammen in n-Dimensionen.
 
 Die Ausgabe von Qhull ist eine Menge von indexierten Vertices. Dazu erhält man eine Menge von Mengen welche die Indexe der einzelnen Voronoi Zellen enthalten.
-Also [[Indices der 1. Vornoi Zelle], [Indices der 2. Vornoi Zelle] ...]
+Also 
+	[[Indices der 1. Vornoi Zelle], [Indices der 2. Vornoi Zelle] ...]
+
 
 #### Berechnung der konvexen Hülle mit QuickHull3D
 
-Da die Ausgabe von Qhull eine Punktmenge liefert, müssen zum Darstellen der Zellwände nun die konvexe Hülle dieser berechnet werden.
+Da die Ausgabe von Qhull eine Punktmenge liefert, müssen zum darstellen der Zellwände, nun die konvexe Hülle dieser berechnet werden.
 Unsere Finale Lösung ist die Open Source Java Bibliothek QuickHull3D.
 Die nun berechneten Zellen werden in dem Objekt "Immutable Mesh" verpackt und zum Darstellen weitergeschickt.
 
-#### Probleme/Herausforderungen
-Die erste Herrausforderungen war eine geeignete Lösung zum Berechenen des Voronoi Diagrammes zu finden. Erfolglos waren wir zu beginnt auf der suche nach einer Java Bibliothek die dieser Aufgabe gewachsen war. Da dies erfolglos war haben wir uns nach alternativen umgesehen.
-Unsere engere Auswahl viel nach einiger Recherche auf PolyMake und Qhull. Polymake wurde schliesslich augrund von Dependencies zu alten Pearl Versionen ausgesiebt. Qhull überzeugte uns da es gut Dokumentiert und immer noch aktiv betreut wird. Dazu kam noch das z.B Matlab und Mathematica Qhull integriet haben, was wir als Indikator für Zuverlässigkeit und Korrektheit empfanden. Damit war unsere Entscheidung für die Voronoi Berechnung gefallen.
+![Schema](schema.png)
 
-Für die Konvexe Hülle kam QHull bei uns auch zum Einsatz. Was sich zum Ende des Projektes, nach gründlicher Analyse, als schwerwiegender Flaschenhals heraus stellte. Die vielen einzelnen Aufrufe des Programm für jede Zelle produzierten einen starken Overhead. Daraufhin wurde als alternative QuickHull3d eingeführt. Dies brachte uns einen Geschwindigkeitszuwachs von Faktor 100.
+#### Probleme/Herausforderungen
+Die erste Herrausforderung war eine geeignete Lösung zum berechnen des Voronoi Diagrammes zu finden. Erfolglos waren wir zu beginnt auf der suche nach einer Java Bibliothek, die dieser Aufgabe gewachsen ist.
+Unsere engere Auswahl viel nach einiger Recherche auf PolyMake und Qhull. Polymake wurde schließlich aufgrund von Dependencies zu alten Pearl Versionen ausgesiebt. Qhull überzeugte uns da es gut dokumentiert und immer noch aktiv betreut wird. Dazu kam noch das z.B Matlab und Mathematica Qhull integriet haben, was wir als Indikator für Zuverlässigkeit und Korrektheit empfanden. Damit war unsere Entscheidung für die Voronoi Berechnung gefallen.
+
+Für die Konvexe Hülle kam anfangs auch QHull bei uns auch zum Einsatz. Was sich zum Ende des Projektes, nach gründlicher Analyse, als schwerwiegender Flaschenhals heraus stellte. Die vielen Aufrufe des Programm für jede einzelne Zelle produzierten einen starken Overhead. Daraufhin wurde als alternative die Java Bibliothek QuickHull3d eingeführt. Dies brachte uns einen Geschwindigkeitszuwachs von Faktor 100.
 
 #### Zusammenfassung
 
