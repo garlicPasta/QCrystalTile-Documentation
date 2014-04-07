@@ -1,4 +1,5 @@
 # Dokumentation 
+
 ## Kachelung des Raumes
 #### Voronoi Tesselierung
 
@@ -15,13 +16,13 @@ Da die Ausgabe von Qhull eine Punktmenge liefert, müssen zum darstellen der Zel
 Unsere Finale Lösung ist die Open Source Java Bibliothek QuickHull3D.
 Die nun berechneten Zellen werden in dem Objekt "Immutable Mesh" verpackt und zum Darstellen weitergeschickt.
 
-![Schema](schema.png)
+![Schema](schema.svg)
 
 #### Probleme/Herausforderungen
 Die erste Herrausforderung war eine geeignete Lösung zum berechnen des Voronoi Diagrammes zu finden. Erfolglos waren wir zu beginnt auf der suche nach einer Java Bibliothek, die dieser Aufgabe gewachsen ist.
 Unsere engere Auswahl viel nach einiger Recherche auf PolyMake und Qhull. Polymake wurde schließlich aufgrund von Dependencies zu alten Pearl Versionen ausgesiebt. Qhull überzeugte uns da es gut dokumentiert und immer noch aktiv betreut wird. Dazu kam noch das z.B Matlab und Mathematica Qhull integriet haben, was wir als Indikator für Zuverlässigkeit und Korrektheit empfanden. Damit war unsere Entscheidung für die Voronoi Berechnung gefallen.
 
-Für die Konvexe Hülle kam anfangs auch QHull bei uns auch zum Einsatz. Was sich zum Ende des Projektes, nach gründlicher Analyse, als schwerwiegender Flaschenhals heraus stellte. Die vielen Aufrufe des Programm für jede einzelne Zelle produzierten einen starken Overhead. Daraufhin wurde als alternative die Java Bibliothek QuickHull3d eingeführt. Dies brachte uns einen Geschwindigkeitszuwachs von Faktor 100.
+Für die Konvexe Hülle kam anfangs auch QHull bei uns auch zum Einsatz. Was sich zum Ende des Projektes, nach gründlicher Analyse, als schwerwiegender Flaschenhals heraus stellte. Die vielen Aufrufe des Programm für jede einzelne Zelle produzierten einen starken Overhead. Daraufhin wurde als alternative die Java Bibliothek QuickHull3d eingeführt. Eine Untersuchung durch einen Profiler ergab einen Performance Schub von ca. Faktor 100. 
 
 #### Zusammenfassung
 
