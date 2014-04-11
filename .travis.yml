@@ -1,0 +1,7 @@
+language: haskell
+install:
+    - cabal install pandoc pandoc-citeproc
+script:
+  - build_travis.sh
+notifications:
+  email: false
