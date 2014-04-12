@@ -3,6 +3,6 @@ cache: cabal
 install:
     - cabal install pandoc pandoc-citeproc
 script:
-  - .script/build_travis.sh
+  - ./script/build_travis.sh
 notifications:
   email: false
