@@ -1,8 +1,10 @@
 language: haskell
 cache: cabal
 install:
-    - cabal install pandoc pandoc-citeproc
+- cabal install pandoc pandoc-citeproc
 script:
-  - ./script/build_travis.sh
+- "./scripts/build_travis.sh"
 notifications:
   email: false
+32876a916332b5a85b623d644dbb9bf01598bca6:
+  secure: Llqwr/0CBm0022iFZ6GrSvm/UXqrCi6iL/LuZl1P7kSSjSDRKl/0DNyCrRkYzYcNtUp3H84fp/ub5lbKOsPzMD/XwGYk1jO84v0ZEQzXotLfp6qHby/z6vjI2qny6rfCRhauCqHt/rDEQOA9I4l0nuTq7xAtTmD/HJbD39Wf7dY=
