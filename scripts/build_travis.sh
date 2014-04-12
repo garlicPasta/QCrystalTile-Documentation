@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 files=( "title" "david" "samuel" "jakob" "andre" )
 echo ">> Starts concating files"
 for file in "${files[@]}"
@@ -13,3 +13,4 @@ echo ">> Runs Pandoc"
 pandoc --filter pandoc-citeproc --toc --include-in-header src/titlesec.tex union_docu.md -o union_docu.pdf
 rm union_docu.md
 
+exit 0
