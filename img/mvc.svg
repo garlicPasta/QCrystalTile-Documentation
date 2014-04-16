@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="52cm" height="35cm" viewBox="25 115 1030 690" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="320" y="500" width="173.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="500" width="173.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="406.85" y="519">SpaceGroupModel</text>
+    <rect style="fill: #ffffff" x="320" y="528" width="173.7" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="528" width="173.7" height="8"/>
+    <rect style="fill: #ffffff" x="320" y="536" width="173.7" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="536" width="173.7" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="555" y="500" width="209.45" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="555" y="500" width="209.45" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="659.725" y="519">SpaceGroupController</text>
+    <rect style="fill: #ffffff" x="555" y="528" width="209.45" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="555" y="528" width="209.45" height="8"/>
+    <rect style="fill: #ffffff" x="555" y="536" width="209.45" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="555" y="536" width="209.45" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="180" y="580" width="341.1" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="180" y="580" width="341.1" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="350.55" y="596">&lt;&lt;interface&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="350.55" y="615">Model</text>
+    <rect style="fill: #ffffff" x="180" y="624" width="341.1" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="180" y="624" width="341.1" height="116"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="183" y="638">+getSpaceGroup(): SpaceGroup</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="183" y="654">+setSpaceGroup(spaceGroup:SpaceGroup): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="183" y="670">+getOrigin(): Vector3D</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="183" y="686">+setOrigin(origin:Vector3D): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="183" y="702">+getSpace(): Vector3D</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="183" y="718">+setSpace(space:Vector3D): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="183" y="734">+getCalculatedPoints(): PointList</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="620" y="580" width="433.5" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="620" y="580" width="433.5" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="836.75" y="596">&lt;&lt;interface&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="836.75" y="615">Controller</text>
+    <rect style="fill: #ffffff" x="620" y="624" width="433.5" height="180"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="620" y="624" width="433.5" height="180"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="623" y="638">+getModel(): Model</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="623" y="654">+getSpaceGroupID(): SpaceGroupID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="623" y="670">+setViewOptions(options:ViewOption,value:boolean): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="623" y="686">+getViewOptions(option:ViewOption): boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="623" y="702">+setColorScheme(scheme:ColorScheme): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="623" y="718">+getColorScheme(): ColorScheme</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="623" y="734">+setVisualization(visualization:Visualization): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="623" y="750">+getVisualization(): Visualization</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="623" y="766">+calculateMesh(): List&lt;Mesh&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="623" y="782">+configure(id:SpaceGroupID,origin:Vector3D,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="623" y="798">           space:Vector3D): void</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="683.679" y1="545.004" x2="719.086" y2="579.006"/>
+    <ellipse style="fill: #ffffff" cx="714.037" cy="574.157" rx="7" ry="7"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="714.037" cy="574.157" rx="7" ry="7"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663.112" y="585.014"></text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="397.469" y1="544.994" x2="383.597" y2="578.997"/>
+    <ellipse style="fill: #ffffff" cx="386.241" cy="572.516" rx="7" ry="7"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="386.241" cy="572.516" rx="7" ry="7"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="327.596" y="584.998"></text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="553.994,522 552.994,522 495.705,522 494.705,522 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="524.349" y="519"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="549.994" y="519"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="498.705" y="519"></text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="26" y="136" width="1004.3" height="307"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="26" y="136" width="1004.3" height="307"/>
+    <rect style="fill: #ffffff" x="26" y="116" width="40" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="26" y="116" width="40" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="28" y="131">View</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="437" y="265" width="162.25" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="437" y="265" width="162.25" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="518.125" y="281">&lt;&lt;FrameSWT&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="518.125" y="300">SpaceGroupView</text>
+    <rect style="fill: #ffffff" x="437" y="309" width="162.25" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="437" y="309" width="162.25" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="68.25" y="259" width="244.35" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="68.25" y="259" width="244.35" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="190.425" y="275">&lt;&lt;Panel&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="190.425" y="294">SpaceGroupSettingsPanel</text>
+    <rect style="fill: #ffffff" x="68.25" y="303" width="244.35" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="68.25" y="303" width="244.35" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="71.25" y="317">-controller: Controller</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="60" y="180" width="252.6" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="60" y="180" width="252.6" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="186.3" y="196">&lt;&lt;Panel&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="186.3" y="215">SpaceGroupSelectionPanel</text>
+    <rect style="fill: #ffffff" x="60" y="224" width="252.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="60" y="224" width="252.6" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="63" y="238">-controller: Controller</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="410.823,291 420.995,291 314.608,291 313.608,291 "/>
+    <polygon style="fill: #000000" points="435.995,291 421.995,295.8 407.995,291 421.995,286.2 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="435.995,291 421.995,295.8 407.995,291 421.995,286.2 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="367.801" y="288"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="403.995" y="288"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="317.608" y="288"></text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="410.823,291 367.801,291 367.801,212 313.608,212 "/>
+    <polygon style="fill: #000000" points="435.995,291 421.995,295.8 407.995,291 421.995,286.2 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="435.995,291 421.995,295.8 407.995,291 421.995,286.2 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="369.801" y="248.5"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="403.995" y="288"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="317.608" y="209"></text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="739" y="235" width="241" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="739" y="235" width="241" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="859.5" y="251">&lt;&lt;interface&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="859.5" y="270">View</text>
+    <rect style="fill: #ffffff" x="739" y="279" width="241" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="739" y="279" width="241" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="742" y="293">+show(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="742" y="309">+invalidateView(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="742" y="325">+invaldiateViewOptions(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="742" y="341">+getController(): Controller</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="85.25" y="339" width="227.35" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="85.25" y="339" width="227.35" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="198.925" y="355">&lt;&lt;Panel&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="198.925" y="374">SpaceGroupStatusPanel</text>
+    <rect style="fill: #ffffff" x="85.25" y="383" width="227.35" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="85.25" y="383" width="227.35" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="88.25" y="397">-controller: Controller</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="600.239" y1="291" x2="738.069" y2="291"/>
+    <ellipse style="fill: #ffffff" cx="731.069" cy="291" rx="7" ry="7"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="731.069" cy="291" rx="7" ry="7"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="682.068" y="297"></text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="410.823,291 367.801,291 367.801,371 313.607,371 "/>
+    <polygon style="fill: #000000" points="435.995,291 421.995,295.8 407.995,291 421.995,286.2 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="435.995,291 421.995,295.8 407.995,291 421.995,286.2 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="369.801" y="328"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="403.995" y="288"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="317.607" y="368"></text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="406.85,498.994 406.85,408.5 518.125,408.5 518.125,318.007 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="462.488" y="405.5"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="410.85" y="494.994"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="522.125" y="330.007"></text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="659.725,498.994 659.725,408.5 518.125,408.5 518.125,318.007 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="588.925" y="405.5"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663.725" y="494.994"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="522.125" y="330.007"></text>
+  </g>
+</svg>
