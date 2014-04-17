@@ -1,3 +1,9 @@
-% QCrystalTile
-% Andre Breitenfeld;David Damm;Samuel Gfröer;Jakob Krause
-% 04-11-2014
+---
+bibliography: src/quellen.bib
+title:  'QCrystalTile'
+author:
+- name: Andre Breitenfeld
+- name: David Damm
+- name: Samuel Gfröer 
+- name: Jakob Krause
+...

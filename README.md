@@ -4,5 +4,7 @@
 
 * pandoc
 * pandoc-citeproc
-* LaTeX (titlesec:,...)
+* LaTeX (titlesec:,..)
+
+
 

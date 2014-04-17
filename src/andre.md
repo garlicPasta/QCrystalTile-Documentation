@@ -5,7 +5,8 @@ Die Architektur der Benutzerschnittstelle wurde nach dem Model-View-Controller (
 Nachfolgend wird eine Übersicht über die Klassen der Visualisierung gegeben.
 Um eine Ausgabe zu erzeugen, muss der Nutzer eine Raumgruppe auswählen und einen Ausgangspunkt sowie die Gittergröße festlegen. Die Gittergröße legt in diesem Zusammenahng den Begrenzungsrahmen fest, in dem die Punkte liegen müssen, die durch die Tranformationen der Raumgruppe entstehen.
 
-![mvc](img/mvc.svg)
+![mvc](img/mvc.png)
+
 ## Bedienkonzept
 
 Die Benutzeroberfläche ist so gestaltet, dass alle relevanten Informationen durch den Nutzer sofort erfasst werden können. Hierbei wurde versucht die sichtbaren Elemente hinsichtlich des logischen Zusammenhangs zu unterteilen. Um die Nutzerinterkation während der Berechnung einer Raumgruppe nicht zu beeinträchtigen, erfolgt die Berechnung asynchron. Das hat den Vorteil, dass die Oberfläche weiterhin bedienbar bleibt. Der grundlegende Aufbau der Benutzeroberfläche wird in der nachfolgenden Abbildung dargestellt.
