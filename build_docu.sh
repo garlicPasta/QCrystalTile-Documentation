@@ -1,5 +1,5 @@
 #!/bin/bash
-files=( "title" "david" "samuel" "jakob" "andre" )
+files=( "title" "samuel" "david" "jakob" "andre" )
 
 for file in "${files[@]}"
 do
