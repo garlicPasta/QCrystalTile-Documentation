@@ -7,22 +7,22 @@
 ## Vorbemerkung: mit welchen Polyedern kann man den Raum pflastern?
 
 Die von uns entwickelte Software dient der Visualisierung eines Problems der Geometrie. Dabei geht es um die Frage: Mit welchen Körpern kann man lückenlos den Raum füllen?
-Je nachdem kann man dieses Problem auch mit dem einen oder anderen Schwerpunkt untersuchen, z.B. wird auf \"mathoverflow\"[@forum] folgendes gefragt:
+Je nachdem kann man dieses Problem auch mit dem einen oder anderen Schwerpunkt untersuchen, z.B. wurde auf \"mathoverflow\"[@forum] folgendes gefragt:
 
-- Welches ist der komplexeste Körper, mit dem man den Raum füllen kann?
-- Im Falle, dass dieser Körper eine Polyeder ist: Wie viele Ecken/Kanten/Flächen kann dieses Polyeder maximal haben?
+- Welches ist der komplexeste Körper mit dem man den Raum füllen kann?
+- Im Falle, dass dieser Körper ein Polyeder ist: Wie viele Ecken/Kanten/Flächen kann dieses Polyeder maximal haben?
 
 Es gibt eine Vielzahl von Arbeiten über Probleme dieser Art.
-Im allgemeinen sind derartige Fragestellungen beliebig komplex. Für eine bestimmte Klasse solchen Raumfüllungen, oder Parkettierungen sind allerdings Lösungen bekannt.
+Im allgemeinen sind derartige Fragestellungen beliebig komplex. Für eine bestimmte Klasse solcher Raumfüllungen bzw. Parkettierungen sind allerdings Lösungen bekannt.
 
 ## Um welche Art von Parkettierungen geht es?
 Unsere Software dient der Visualisierung einer bestimmten Klasse von Parkettierungen. Zunächst soll also skizziert werden, um welche Art von Parkettierungen es hier geht und wie diese konstruiert werden können.
 (Die folgenden Ausführungen stützen sich auf den Artikel von Engel [@engel])
 
-Die Elemente (im folgenden "Kacheln") dieser Parkettierung sollen folgende Eigenschaften haben:
+Die Elemente (im Folgenden "Kacheln") dieser Parkettierung sollen folgende Eigenschaften haben:
 
 - es soll sich um *konvexe* Polyeder handeln
-- Alle Kacheln sollen kongruent oder spiegelbildlich kongruent sein
+- alle Kacheln sollen kongruent oder spiegelbildlich kongruent sein
 - die Kacheln sollen nur mit ganzen Flächen aneinanderstoßen
 - die entstehende Raumteilung soll *"homogen"* sein. (das heißt: es gibt eine Symmetriegruppe, unter der alle Kacheln kongruent sind)
 
@@ -31,7 +31,7 @@ Zusätzlich wird gefordert, dass die Raumteilung *"homogen"* (auch "regulär" od
 Der letzte Punkt fordert also eine Symmetriegruppe. Für diese gilt:
 
 - da alle Kacheln unter ihr kongruent sind, können aus einer einzigen Kachel durch Anwendung dieser Gruppe alle Kacheln der Parkettierung erzeugt werden
-- Da die Kacheln den Raum vollständig bedecken sollen, muss diese jene Symmetriegruppe Translationen beinhalten. Das heißt es handelt sich bei dieser Symmetriegruppe um eine sogenannte *Raumgruppe*
+- da die Kacheln den Raum vollständig bedecken sollen, muss diese jene Symmetriegruppe Translationen beinhalten, d.h. es handelt sich bei dieser Symmetriegruppe um eine sogenannte *Raumgruppe*
 
 In dem Artikel wird gezeigt, dass eine solche Parkettierung als "Wirkungsbereichsteilung" ("Voronoi-Diagramm") einer homogenen Punktmenge entsteht.
 
@@ -46,13 +46,13 @@ Insgesamt also: Es gibt eine Symmetriegruppe, genauer, eine Raumgruppe ***G***, 
 
 Eine Parkettierung mit den oben geforderten Eigenschaften lässt sich also folgendermaßen konstruieren:
 
-1. konstruiere die homogene Punktmenge ***M***:
-    1. wähle einen Punkt ***P***
-    1. wähle eine Raumgruppe ***G***
+1. Konstruiere die homogene Punktmenge ***M***:
+    1. Wähle einen Punkt ***P***
+    1. Wähle eine Raumgruppe ***G***
     1. Sei ***M*** die Menge aller Bilder von ***P*** unter ***G***
 2. Sei ***V*** die Voronoi-Zerlegung der Punktmenge ***M***
 
-wegen den obigen Ausführungen gilt jetzt: ***V*** ist jetzt eine Parkettierung mit den geforderten Eigenschaften
+Wegen den obigen Ausführungen gilt jetzt: ***V*** ist jetzt eine Parkettierung mit den geforderten Eigenschaften
 
 
 # Meta-Design
@@ -67,9 +67,9 @@ Dies legt eine Filter-Architektur nahe, jeder Berechnungs-Schritt (im Diagramm d
 Dieser Ansatz ignoriert allerdings Aspekte, die jenseits dieses Datenflusses liegen:
 
 - Wann wird diese Verarbeitungs-Kette angestoßen?
-- Die Visualisierung wird ein GUI benutzen. Wie ist dieses in der Lage, die Verarbeitungs-Kette mit vom User geänderten Parametern neu anzustoßen?
+- Die Visualisierung wird auf einer GUI dargestellt. Wie ist diese in der Lage, die Verarbeitungs-Kette mit vom User geänderten Parametern neu anzustoßen?
 
-Das Model-View-Controller-Pattern (im folgenden "MVC-Pattern") ist eine bewährte Strategie diesen Fragen zu begegnen.
+Das Model-View-Controller-Pattern (im Folgenden "MVC-Pattern") ist eine bewährte Strategie, die diesen Fragen zu begegnet.
 Unser Design besteht in einer Verschmelzung einer Filter-Architektur mit dem MVC-Pattern. Dazu werden die einzelnen Berechnungs-Schritte der obigen Verarbeitungs-Kette wie folgt auf die drei Komponenten des MVC-Patterns verteilt:
 
 	Punkt P, Raumgruppe G ->(1) Punktmenge M ->(2) Voronoi-Zerlegung V
@@ -80,20 +80,20 @@ Unser Design besteht in einer Verschmelzung einer Filter-Architektur mit dem MVC
 	View: (2, 3)
 		Punktmenge M -> Voronoi-Zerlegung V -> Visualisierung
 	Controller:
-		- erzeugt, und verknüpft Model und View
+		Erzeugt, und verknüpft Model und View
 
 Kommentar:
 Das Datenmodell besteht in den zu visualisierenden Daten. Diese bestehen in diesem Fall eigentlich aus einer bestimmten Parkettierung V.
-Da die Parkettierung allerdings durch die Wahl der Raumgruppe G, sowie eines einzigen Punktes P eindeutig festgelegt ist, genügt es, diese 2 Parameter als Datenmodell zu wählen. Die Voronoi-Zerlegung wird in die Darstellung des M-V-C-Patterns verschoben.
-Dadurch ist das Datenmodell für das Ergebnis des Algorithmus (nämlich die Parkettierung V) eine Frage der "View".
+Da die Parkettierung allerdings durch die Wahl der Raumgruppe G, sowie eines einzigen Punktes P eindeutig festgelegt ist, genügt es, diese 2 Parameter als Datenmodell zu wählen. Die Voronoi-Zerlegung wird in die Darstellung des MVC-Patterns verschoben.
+Dadurch ist das Datenmodell für das Ergebnis des Algorithmus (nämlich die Parkettierung V) eine Frage des Views.
 
-Durch diese Überlegungen ist eine Art Meta-Design festgelegt, das 3 Module, nämlich Model, View und Controller Vorschlägt, deren innere Struktur jedoch offen lässt. Selbst die genauen Schnittstellen zwischen diesen Modulen, können zunächst vage bleiben, und ergeben sich automatisch während des Entwicklungsprozesses.
+Durch diese Überlegungen ist eine Art Meta-Design festgelegt, das 3 Module, nämlich Model, View und Controller vorschlägt, deren innere Struktur jedoch offen lässt. Selbst die genauen Schnittstellen zwischen diesen Modulen, können zunächst vage bleiben und ergeben sich automatisch während des Entwicklungsprozesses.
 
 Die folgenden Kapitel geben einen Einblick sowohl in das Design, als auch die Implementierung der Innenstruktur dieser 3 Komponenten.
 
 # Design und Implementierung des Models 
 
-Im folgenden werden die wichtigsten Entscheidungen bei Design und Implementierung des Models dargelegt. Dabei werden teilweise Vereinfachungen vorgenommen und unwichtige Aspekte zu Gunsten der Übersichtlichkeit übergangen.
+im Folgenden werden die wichtigsten Entscheidungen bei Design und Implementierung des Models dargelegt. Dabei werden teilweise Vereinfachungen vorgenommen und unwichtige Aspekte zu Gunsten der Übersichtlichkeit übergangen.
 
 ## Design des Models
 
@@ -141,7 +141,7 @@ Oben haben wir eine Raumgruppe als Menge von Transformationen modelliert. Nun so
 
 ##### Welche Art von Transformationen?
 
-Bei den Transformationen handelt es sich um Verschiebungen (d.h. ) die als Komposition von Transformationen folgenden Typs entstehen:
+Bei den Transformationen handelt es sich um Verschiebungen, die als Komposition von Transformationen folgenden Typs entstehen:
 
 - Translationen
 - Rotationen
@@ -152,7 +152,7 @@ Bei den Transformationen handelt es sich um Verschiebungen (d.h. ) die als Kompo
 Für die Darstellung der Transformationen gibt es folgende naheliegende Möglichkeiten:
 
 - *als Matrizen*:
-Rotationen, sowie Roto-Inversionen können durch 3x3-Matrizen kodiert werden. Translationen, sowie Mischformen von Translationen und Rotationen, lassen sich zwar auf diese weise nicht direkt darstellen, wohl aber mittels sogenannter *homogener Koordinaten*. Statt 3x3- werden dabei 4x4-Matrizen verwendet.
+Rotationen, sowie Roto-Inversionen können durch 3x3-Matrizen kodiert werden. Translationen, sowie Mischformen von Translationen und Rotationen, lassen sich zwar auf diese Weise nicht direkt darstellen, wohl aber mittels sogenannter *homogener Koordinaten*. Statt 3x3- werden dabei 4x4-Matrizen verwendet.
 
 	Sei rMatr eine 3x3-Rotations-Matrix, (sx, sy, sz) ein TranslationsVektor. Dann sind die zugehörigen homogenen 4x4-Matrizen wie folgt definiert:
 
@@ -171,14 +171,14 @@ Tatsächlich lassen sich Rotationen auch als Quaternionen darstellen. Dabei hand
 
 Für die Berechnung der Punktmenge M sind Matrizen aus folgenden Gründen optimal:
 
-- Verkettung von Transformationen, sowie Anwenden einer Transformation auf den Punkt entspricht einer Matrixmultiplikation. In der Software-Bibliothek la4j ist diese Bereits implementiert.
-- Matrizenrechnung ist ein gängiges mathematisches Konzept, was der Wartbarkeit der Software zu Gute kommt und sowohl für beim Implementieren als auch beim Debugging von Vorteil ist.
+- Verkettung von Transformationen, sowie Anwenden einer Transformation auf den Punkt entspricht einer Matrixmultiplikation. In der Software-Bibliothek la4j ist diese bereits implementiert.
+- Matrizenrechnung ist ein gängiges mathematisches Konzept, was der Wartbarkeit der Software zu Gute kommt und sowohl beim Implementieren als auch beim Debugging von Vorteil ist.
 
 ##### Abstraktion der internen Darstellung über die Klasse `Transformation`
 
-Naheliegend wäre es also, Transformationen als 4x4-Matrizen zu kodieren. Stattdessen haben wir uns entschieden, eine eigene Klasse für Transformationen bereit zu stellen. Die eigentliche interne Darstellung ist somit geheim, und kann beliebig ausgetauscht werden. Die Möglichkeit, Verkettungen von Transformationen in einer Methode zu kapseln hat entscheidende Vorteile, wie sich herausgestellt hat.
+Naheliegend wäre es also, Transformationen als 4x4-Matrizen zu kodieren. Stattdessen haben wir uns entschieden, eine eigene Klasse für Transformationen bereitzustellen. Die eigentliche interne Darstellung ist somit geheim und kann beliebig ausgetauscht werden. Die Möglichkeit, Verkettungen von Transformationen in einer Methode zu kapseln hat entscheidende Vorteile, wie sich herausgestellt hat.
 
-Es ist an dieser Stelle wichtig, dass für die Komposition von Transformationen immer die Methode `Transformation.compose` benutzt wird, und nicht die Matrixmultiplikation! Ansonsten ist das Verhalten nicht spezifiziert.
+Es ist an dieser Stelle wichtig, dass für die Komposition von Transformationen immer die Methode `Transformation.compose` benutzt wird und nicht die Matrixmultiplikation. Ansonsten ist das Verhalten nicht spezifiziert.
 
 An die Implementierung der Transformationen stellen wir 2 Forderungen:
 
@@ -190,7 +190,7 @@ An die Implementierung der Transformationen stellen wir 2 Forderungen:
 
 	s - s = id
 
-(beide Punkte werden im folgenden unter dem Begriff **Kompositionseindeutigkeit** zusammengefasst).
+(beide Punkte werden im Folgenden unter dem Begriff **Kompositionseindeutigkeit** zusammengefasst).
 
 ## Interface nach außen
 
@@ -215,7 +215,7 @@ Nachdem nun die wichtigen Datentypen des Models spezifiziert sind, soll hier ski
 Für die Funktionalität der Implementierung von `SpaceGroup` ist hauptsächlich die Implementierung des Interfaces `Transformation` entscheidend, und die Implementierung eine Herausforderung (siehe unten).
 Die einzig interessante Aufgabe ist das Implementieren der Methode `SpaceGroup.getTransformations`. Diese Methode soll aus einer kleinen Menge von Transformationen weitere Transformationen berechnen.
 
-sei E die Menge der Erzeuger-Transformationen.
+Sei E die Menge der Erzeuger-Transformationen.
 
 	H = E
 
@@ -234,7 +234,7 @@ sei E die Menge der Erzeuger-Transformationen.
 	} wiederhole, falls |H| größer geworden ist
 
 Dieser Algorithmus berechnet alle Transformationen, die als Komposition der Erzeuger-Transformationen vorkommen, und nicht aus der Einheitszelle herausführen.
-Die Bedingung `inEinheitsZelle` zu implementieren, ist tatsächlich nicht ganz einfach, soll zu Gunsten der Übersichtlichkeit hier nicht erklärt werden.
+Die Bedingung `inEinheitsZelle` zu implementieren, ist tatsächlich nicht ganz einfach und soll zu Gunsten der Übersichtlichkeit hier nicht erklärt werden.
 
 ### Implementierung der Klasse `PointSetCreator`
 
@@ -249,7 +249,7 @@ Pseudocode:
 	}
 
 Dieser Algorithmus erzeugt den Ausschnitt aus der homogenen Punktmenge M, so dass alle Punkte in der Einheitszelle liegen.
-Soll ein größerer Ausschnitt berechnet werden, so müssen zu dem Resultat auch alle Translationen der Punktmenge hinzu, die in dem gewünschten Ausschnitt liegen.
+Soll ein größerer Ausschnitt berechnet werden, so müssen zu dem Resultat auch alle Translationen der Punktmenge hinzugenommen, die in dem gewünschten Ausschnitt liegen.
 
 ### Implementierung der Klasse `Transformation`
 
@@ -261,7 +261,7 @@ Die Komposition dieser Implementierung erfüllt nicht die Forderung nach **Kompo
 
 Das Problem ist, dass in dieser naiven Implementierung die Komposition von Transformationen über eine Matrix-Multiplikation bewerkstelligt wird. Die Rundungsfehler der Fließkommazahlenrechnung machen diesen Algorithmus zu instabil um **Kompositionseindeutigkeit** garantieren zu können.
 
-dieses Problem zu umgehen kann man sich zu Nutze machen, dass in Raumgruppen auf Grund der ???kristallographischen Restriktion??? sowohl Rotationen als auch Translationen nicht in beliebig kleinen Schritten vorkommen.
+Um dieses Problem zu umgehen kann man sich zu Nutze machen, dass in Raumgruppen auf Grund der ???kristallographischen Restriktion??? sowohl Rotationen als auch Translationen nicht in beliebig kleinen Schritten vorkommen.
 Durch Runden des Ergebnisses auf den ggT dieser aller Rotationen bzw. Translationen kann dieses Problem umgangen werden. Dieses Prinzip des Rundens ist allerdings in der Matrix-Darstellung schwer zu bewerkstelligen.
 Für diesen Zweck wird intern eine andere Darstellung für Transformationen verwendet:
 
@@ -276,7 +276,7 @@ Vereinfacht sieht die interne Darstellung einer Transformation ***t*** so aus:
 
 Das heißt die Transformation wird in einen linearen Teil, nämlich eine Rotation und eine Translation aufgeteilt.
 Die Matrix ***m*** wird benötigt, um Roto-Inversionen darstellen zu können. Handelt es sich um eine pure Rotation, so sei m die Einheitsmatrix, falls nicht die Matrix der Punktspiegelung am Ursprung.
-Die Rotation wird aber *nicht* als eine Rotationsmatrix dargestellt, sondern in eine Folge von 3 Rotationen um die x-, y-, und z-Achse (die 3 Komponenten des Vektors `rotVec`) aufgeteilt. Diese 3 Komponenten werden auch *Euler-Winkel* genannt.
+Die Rotation wird aber *nicht* als eine Rotationsmatrix dargestellt, sondern in eine Folge von 3 Rotationen, um die x-, y-, und z-Achse (die 3 Komponenten des Vektors `rotVec`), aufgeteilt. Diese 3 Komponenten werden auch *Euler-Winkel* genannt.
 
 Gemeint sind 3 Winkel, so dass für die 3x3-Matrix ***rMatr*** einer Rotation gilt:
 
@@ -315,7 +315,7 @@ Wenn ***hom*** als 4x4-Matrix angegeben ist
 			rMatr = l * m
 	Das heißt ***m*** ist entweder eine Matrix für die Punktspiegelung am Ursprung, oder die Einheitsmatrix.
 	
-3. aus der 3x3-Matrix ***rMatr***, berechne die 3 Eulerwinkel rx, ry, rz so, dass die Komposition von deren Rotationsmatrizen r entspricht:
+3. Aus der 3x3-Matrix ***rMatr***, berechne die 3 Eulerwinkel rx, ry, rz so, dass die Komposition von deren Rotationsmatrizen r entspricht:
 
 	rMatr = RotMatrZ( rz ) * RotMatrY( ry ) * RotMatrX( rx )
 
@@ -382,4 +382,4 @@ Entscheidend für die korrekte Implementierung Kompositionsoperation ist das Vor
 
 Das heißt die Vektoren können Komponentenweise addiert werden, und die Spiegelungsmatrizen werden multipliziert.
 
-Um die Ungenauigkeit der Fließkomma-Rechnung auszugleichen, werden nachträglich die Komponenten so gerundet, dass sie ein Vielfaches des ggT der Rotation bzw. Translation einer Raumgruppe sind. Für die Euler-Winkel muss davor noch Komponentenweise modulo 2xpi gerechnet werden, um eine eindeutige Darstellung für Rotationen zu garantieren.
+Um die Ungenauigkeit der Fließkomma-Rechnung auszugleichen, werden nachträglich die Komponenten so gerundet, dass sie ein Vielfaches des ggT der Rotation bzw. Translation einer Raumgruppe sind. Für die Euler-Winkel muss davor noch Komponentenweise modulo 2*pi gerechnet werden, um eine eindeutige Darstellung für Rotationen zu garantieren.

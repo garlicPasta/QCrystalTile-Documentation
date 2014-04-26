@@ -5,7 +5,7 @@
 
 ###JSON(JavaScript Object Notation ):
 
-JSON ist ein Datenformat, in dem Informationen wie Arrays, Objekte etc.  in lesbarer Form gespeichert werden und bei bedarf wieder erzeugt werden können.
+JSON ist ein Datenformat, in dem Informationen, wie Arrays, Objekte etc., gespeichert werden und bei Bedarf wieder erzeugt werden können.
 Die Daten werden dabei sprachunabhängig gespeichert und können somit auch sprachübergreifend genutzt werden.
 Parser existieren in fast allen verfügbaren Programmiersprachen.
 
@@ -40,7 +40,7 @@ Schwierigkeiten hierbei gab es bei den Transformationen, da diese als String in 
 
 Bsp: 	X, 1/2 +Y, Z
 
- wir aber mit 4x4 Matrizen arbeiten.
+Wir aber mit 4x4 Matrizen arbeiten.
 
  	X	O 	0 	0 
  	0 	Y 	0 	1/2
@@ -55,5 +55,5 @@ Aus den Zeilenvektoren konnten nun die Transformationen in 4*4 Matrizen dargeste
 
 ##Gruppierung der Raumgruppen
 
-Die SpaceGroupFactory bietet neben dem Erstellen der Raumgruppen noch die Möglichkeit die Raumgruppen nach bestimmten  Kriterien auszuwählen (Kristallsystem, Zentrierung).
+Die SpaceGroupFactory bietet neben dem Erstellen der Raumgruppen noch die Möglichkeit die Raumgruppen nach bestimmten Kriterien auszuwählen (Kristallsystem, Zentrierung).
 Dabei wird wieder anhand der gesuchten Kriterien durch das JSON-Array iteriert und ein Set der angeforderten Transformationen zurückgegeben.
