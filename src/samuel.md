@@ -60,7 +60,8 @@ Wegen den obigen Ausführungen gilt jetzt: ***V*** ist jetzt eine Parkettierung 
 Das Programm soll Parkettierungen des anfangs definierten Typs anschaulich darstellen können. Dazu muss es auch in der Lage sein, Ausschnitte solcher Parkettierungen zu berechnen. Zuletzt muss die berechnete Parkettierung (= Voronoi-Zerlegung) visualisiert werden.
 Anschaulich gesprochen muss dazu folgende Kette von Verarbeitungsschritten realisiert werden:
 
-	Punkt P, Raumgruppe G -> Punktmenge M -> Voronoi-Zerlegung V -> Visualisierung
+	Punkt P, Raumgruppe G -> Punktmenge M -> Voronoi-Zerlegung V -> 
+	Visualisierung
 
 Dies legt eine Filter-Architektur nahe, jeder Berechnungsschritt (im Diagramm durch einen Pfeil dargestellt) dieser Kette entspricht einem Filter.
 
@@ -110,7 +111,7 @@ Die Verwendung einer Software-Library für Lineare Algebra, nämlich "la4j" [@la
 - Punkt ***P*** -> Vector3D
 - Punktmenge ***M*** -> Set<Vector3D>
 
-Vector3D ist dabei eine Klasse, die die Funktionalität der Klasse `Vector` von la4j *** kapselt. Die Benutzung eines solchen Proxies erlaubt es, von der verwendeten Software-Bibliothek zu abstrahieren (Proxy pattern[@proxy]).
+Vector3D ist dabei eine Klasse, die die Funktionalität der Klasse `Vector` von "la4j" kapselt. Die Benutzung eines solchen Proxies erlaubt es, von der verwendeten Software-Bibliothek zu abstrahieren (Proxy pattern[@proxy]).
 Analog werden auch Proxies `Matrix3D`, `Matrix4D` definiert.
 
 
@@ -127,13 +128,15 @@ Gesucht ist dabei eine Darstellung, die eine effiziente Berechnung der homogenen
 
 Für die konkrete Implementierung ist es sinnvoll, die entsprechende Klasse um weitere Informationen anzureichern:
 
-	- `SpaceGroup.getLatticeType`: dieses Feld steht für den Gittertyp der Raumgruppe
-	- `SpaceGroup.getGeneratingSet`: eine Menge von Transformationen, die die Raumgruppe erzeugen
+	- `SpaceGroup.getLatticeType`: 
+	   dieses Feld steht für den Gittertyp der Raumgruppe
+	- `SpaceGroup.getGeneratingSet`: 
+	   eine Menge von Transformationen, die die Raumgruppe erzeugen
 
 `SpaceGroup.getTransformations` gibt die Menge der Transformationen in der Raumgruppe zurück. Dies sind theoretisch unendlich viele. Da die Visualisierung nur einen endlichen Ausschnitt der Raumteilung darstellen kann, lässt sich diese Menge allerdings einschränken, indem alle Transformationen weggelassen werden, die den Punkt P aus dem zu visualisierenden Bereich transformieren würden.  
 In der Tat genügt es, alle Transformationen zu erzeugen, die den Punkt nicht aus der Einheitszelle heraustransformieren (siehe Kapitel: Implementierung der Klasse `SpaceGroup`)
 
-Die Erzeugung einer Implementierung der Klasse `SpaceGroup` wurde gemäß dem Factory-Pattern in die Klasse `SpaceGroupFactory` ausgelagert. Die zugehörigen Klassen sind im Diagramm als eigenes Paket dargestell (`ID -> SpaceGroup`).
+Die Erzeugung einer Implementierung der Klasse `SpaceGroup` wurde gemäß dem Factory-Pattern in die Klasse `SpaceGroupFactory` ausgelagert. Die zugehörigen Klassen sind im Diagramm als eigenes Paket dargestellt (`ID -> SpaceGroup`).
 
 #### Repräsentation der Transformationen
 
@@ -171,7 +174,7 @@ Tatsächlich lassen sich Rotationen auch als Quaternionen darstellen. Dabei hand
 
 Für die Berechnung der Punktmenge M sind Matrizen aus folgenden Gründen optimal:
 
-- Verkettung von Transformationen, sowie Anwenden einer Transformation auf den Punkt entspricht einer Matrixmultiplikation. In der Software-Bibliothek la4j ist diese bereits implementiert.
+- Verkettung von Transformationen, sowie Anwenden einer Transformation auf den Punkt entspricht einer Matrixmultiplikation. In der Software-Bibliothek "la4j" ist diese bereits implementiert.
 - Matrizenrechnung ist ein gängiges mathematisches Konzept, was der Wartbarkeit der Software zu Gute kommt und sowohl beim Implementieren als auch beim Debugging von Vorteil ist.
 
 ##### Abstraktion der internen Darstellung über die Klasse `Transformation`
