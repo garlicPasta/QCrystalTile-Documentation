@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="93cm" height="31cm" viewBox="-661 -208 1847 617" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="-512.654" y="-186.193" width="1696.86" height="530.329"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-512.654" y="-186.193" width="1696.86" height="530.329"/>
+    <rect style="fill: #ffffff" x="-512.654" y="-206.193" width="42.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-512.654" y="-206.193" width="42.5" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-510.654" y="-192.193">Model</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-493.622" y="-122.489" width="517.602" height="360.624"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-493.622" y="-122.489" width="517.602" height="360.624"/>
+    <rect style="fill: #ffffff" x="-493.622" y="-142.489" width="127.2" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-493.622" y="-142.489" width="127.2" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-491.622" y="-128.489">ID -&gt; SpaceGroup</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="50.986" y="179" width="333.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="50.986" y="179" width="333.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="217.686" y="198">SpaceGroup</text>
+    <rect style="fill: #ffffff" x="50.986" y="207" width="333.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="50.986" y="207" width="333.4" height="8"/>
+    <rect style="fill: #ffffff" x="50.986" y="215" width="333.4" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="50.986" y="215" width="333.4" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="53.986" y="229">+getTransformations(): Set&lt;Transformation&gt;</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="505" y="180" width="92.875" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="505" y="180" width="92.875" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="551.438" y="199">Vector3D</text>
+    <rect style="fill: #ffffff" x="505" y="208" width="92.875" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="505" y="208" width="92.875" height="8"/>
+    <rect style="fill: #ffffff" x="505" y="216" width="92.875" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="505" y="216" width="92.875" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="380.804" y="364.242" width="64.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="380.804" y="364.242" width="64.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="413.154" y="383.242">Model</text>
+    <rect style="fill: #ffffff" x="380.804" y="392.242" width="64.7" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="380.804" y="392.242" width="64.7" height="8"/>
+    <rect style="fill: #ffffff" x="380.804" y="400.242" width="64.7" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="380.804" y="400.242" width="64.7" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="413.154,339.07 413.154,287.121 551.438,287.121 551.438,224 "/>
+    <polygon style="fill: #ffffff" points="413.154,364.242 408.354,350.242 413.154,336.242 417.954,350.242 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="413.154,364.242 408.354,350.242 413.154,336.242 417.954,350.242 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="482.296" y="283.121">getPoint</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="424.154" y="360.242"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="555.438" y="236"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="413.154,338.065 413.154,292.622 217.686,292.622 217.686,236.007 "/>
+    <polygon style="fill: #ffffff" points="413.154,363.236 408.354,349.236 413.154,335.236 417.954,349.236 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="413.154,363.236 408.354,349.236 413.154,335.236 417.954,349.236 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="315.42" y="288.622">getSpaceGroup</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="424.154" y="359.236"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="221.686" y="248.007"/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="157.158,303.55 663.658,303.55 675.658,315.55 675.658,337.55 157.158,337.55 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="157.158,303.55 663.658,303.55 675.658,315.55 675.658,337.55 157.158,337.55 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="663.658,303.55 663.658,315.55 675.658,315.55 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="164.158" y="328.45">
+      <tspan x="164.158" y="328.45">Das Modell besteh aus einer Raumgruppe, und einem gewählten Punkt</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="142.669" y="-1.26705" width="148.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="142.669" y="-1.26705" width="148.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="216.969" y="17.7329">LatticeType</text>
+    <rect style="fill: #ffffff" x="142.669" y="26.7329" width="148.6" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="142.669" y="26.7329" width="148.6" height="8"/>
+    <rect style="fill: #ffffff" x="142.669" y="34.7329" width="148.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="142.669" y="34.7329" width="148.6" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="145.669" y="48.7329">+getName(): String</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="217.686,152.871 217.686,105.624 216.969,105.624 216.969,55.7199 "/>
+    <polygon style="fill: #ffffff" points="217.686,178.042 212.886,164.042 217.686,150.042 222.486,164.042 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="217.686,178.042 212.886,164.042 217.686,150.042 222.486,164.042 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="217.327" y="101.624">getLatticeType</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="228.686" y="174.042"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="220.969" y="67.7199"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="254.828" y="-161.502" width="250.503" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="254.828" y="-161.502" width="250.503" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="380.08" y="-145.502">&lt;&lt;Enum&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="380.08" y="-126.502">LatticeType.CenteringType</text>
+    <rect style="fill: #ffffff" x="254.828" y="-117.502" width="250.503" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="254.828" y="-117.502" width="250.503" height="8"/>
+    <rect style="fill: #ffffff" x="254.828" y="-109.502" width="250.503" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="254.828" y="-109.502" width="250.503" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="48.6284" y="-164.152" width="186.602" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="48.6284" y="-164.152" width="186.602" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="141.929" y="-148.152">&lt;&lt;Enum&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="141.929" y="-129.152">LatticeType.System</text>
+    <rect style="fill: #ffffff" x="48.6284" y="-120.152" width="186.602" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="48.6284" y="-120.152" width="186.602" height="8"/>
+    <rect style="fill: #ffffff" x="48.6284" y="-112.152" width="186.602" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="48.6284" y="-112.152" width="186.602" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="216.969,-27.4457 216.969,-59.7095 141.929,-59.7095 141.929,-103.145 "/>
+    <polygon style="fill: #ffffff" points="216.969,-2.27413 212.169,-16.2741 216.969,-30.2741 221.769,-16.2741 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="216.969,-2.27413 212.169,-16.2741 216.969,-30.2741 221.769,-16.2741 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="179.449" y="-63.7095">getSystem</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="227.969" y="-6.27413"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="145.929" y="-91.1448"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="216.969,-27.4457 216.969,-58.3845 380.08,-58.3845 380.08,-100.495 "/>
+    <polygon style="fill: #ffffff" points="216.969,-2.27413 212.169,-16.2741 216.969,-30.2741 221.769,-16.2741 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="216.969,-2.27413 212.169,-16.2741 216.969,-30.2741 221.769,-16.2741 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="298.524" y="-62.3845">getCenteringType</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="227.969" y="-6.27413"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="384.08" y="-88.4948"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="429.556" y="-32.67" width="364.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="429.556" y="-32.67" width="364.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="611.656" y="-13.67">Transformation</text>
+    <rect style="fill: #ffffff" x="429.556" y="-4.67" width="364.2" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="429.556" y="-4.67" width="364.2" height="8"/>
+    <rect style="fill: #ffffff" x="429.556" y="3.33" width="364.2" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="429.556" y="3.33" width="364.2" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="432.556" y="17.33">+linearPart(): Matrix3D</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="432.556" y="33.33">+translationPart(): Vector3D</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="432.556" y="49.33">+getAsHomogeneous(): Matrix4D</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="432.556" y="65.33">+composition(b:Transformation): Transformation</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="432.556" y="81.33">+apply(point:Vector3D): Vector3D</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="217.686,152.821 217.686,126.165 611.656,126.165 611.656,88.3374 "/>
+    <polygon style="fill: #ffffff" points="217.686,177.993 212.886,163.993 217.686,149.993 222.486,163.993 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="217.686,177.993 212.886,163.993 217.686,149.993 222.486,163.993 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="414.671" y="122.165">getGeneratingSet</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="228.686" y="173.993"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="615.656" y="100.337"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-463.434" y="146.495" width="418.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-463.434" y="146.495" width="418.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-254.384" y="165.495">SpaceGroupFactory</text>
+    <rect style="fill: #ffffff" x="-463.434" y="174.495" width="418.1" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-463.434" y="174.495" width="418.1" height="8"/>
+    <rect style="fill: #ffffff" x="-463.434" y="182.495" width="418.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-463.434" y="182.495" width="418.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-460.434" y="196.495">+getSpaceGroup(spaceGroupID:SpaceGroupID): SpaceGroup</text>
+    <rect style="fill: #ffffff" x="-91.334" y="132.495" width="108.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="-91.334" y="132.495" width="108.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-85.334" y="146.495">SpaceGroupID:</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-460.56" y="-97.1688" width="138.25" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-460.56" y="-97.1688" width="138.25" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-391.435" y="-78.1688">SpaceGroupID</text>
+    <rect style="fill: #ffffff" x="-460.56" y="-69.1688" width="138.25" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-460.56" y="-69.1688" width="138.25" height="8"/>
+    <rect style="fill: #ffffff" x="-460.56" y="-61.1688" width="138.25" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-460.56" y="-61.1688" width="138.25" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-464.62" y="-3.66422" width="234.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-464.62" y="-3.66422" width="234.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-347.37" y="15.3358">SpaceGroupEnumeration</text>
+    <rect style="fill: #ffffff" x="-464.62" y="24.3358" width="234.5" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-464.62" y="24.3358" width="234.5" height="8"/>
+    <rect style="fill: #ffffff" x="-464.62" y="32.3358" width="234.5" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-464.62" y="32.3358" width="234.5" height="8"/>
+    <rect style="fill: #ffffff" x="-276.12" y="-17.6642" width="123.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="-276.12" y="-17.6642" width="123.5" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-270.12" y="-3.66422">ID:SpaceGroupID</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-659.926" y="-10.8358" width="122.85" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-659.926" y="-10.8358" width="122.85" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="-598.501" y="5.16422">&lt;&lt;interface&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-598.501" y="24.1642">java.util.List</text>
+    <rect style="fill: #ffffff" x="-659.926" y="33.1642" width="122.85" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-659.926" y="33.1642" width="122.85" height="8"/>
+    <rect style="fill: #ffffff" x="-659.926" y="41.1642" width="122.85" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-659.926" y="41.1642" width="122.85" height="8"/>
+    <rect style="fill: #ffffff" x="-583.076" y="-24.8358" width="54" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="-583.076" y="-24.8358" width="54" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-577.076" y="-10.8358">T:</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="-509.831,19.1642 -488.847,19.1642 -488.847,18.3358 -465.627,18.3358 "/>
+    <polygon style="fill: #ffffff" points="-509.831,11.1642 -525.831,19.1642 -509.831,27.1642 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-509.831,11.1642 -525.831,19.1642 -509.831,27.1642 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-278.662,-163.501 -41.662,-163.501 -29.662,-151.501 -29.662,-113.501 -278.662,-113.501 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-278.662,-163.501 -41.662,-163.501 -29.662,-151.501 -29.662,-113.501 -278.662,-113.501 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="-41.662,-163.501 -41.662,-151.501 -29.662,-151.501 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-271.662" y="-138.601">
+      <tspan x="-271.662" y="-138.601">erzeugen von "Raumgruppen" aus</tspan>
+      <tspan x="-271.662" y="-122.601">"SpaceGroupID"s</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="722.17" y="270.596" width="425.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="722.17" y="270.596" width="425.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="935.07" y="289.596">PointSetCreator</text>
+    <rect style="fill: #ffffff" x="722.17" y="298.596" width="425.8" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="722.17" y="298.596" width="425.8" height="8"/>
+    <rect style="fill: #ffffff" x="722.17" y="306.596" width="425.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="722.17" y="306.596" width="425.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="725.17" y="320.596">+get(sg:SpaceGroup,selectedPoint:Vector3D): Set&lt;Point&gt;</text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="838.906,235.396 1129.81,235.396 1141.81,247.396 1141.81,269.396 838.906,269.396 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="838.906,235.396 1129.81,235.396 1141.81,247.396 1141.81,269.396 838.906,269.396 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="1129.81,235.396 1129.81,247.396 1141.81,247.396 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="845.906" y="260.296">
+      <tspan x="845.906" y="260.296">Punkt P, Raumgruppe G -&gt; Punktmenge M</tspan>
+    </text>
+  </g>
+</svg>

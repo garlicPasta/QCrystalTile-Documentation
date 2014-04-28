@@ -5,7 +5,7 @@
 
 ###JSON(JavaScript Object Notation ):
 
-JSON ist ein Datenformat, in dem Informationen, wie Arrays, Objekte etc., gespeichert werden und bei Bedarf wieder erzeugt werden können.
+JSON ist ein Datenformat, in dem Informationen wie Arrays, Objekte etc. gespeichert werden und bei Bedarf wieder erzeugt werden können.
 Die Daten werden dabei sprachunabhängig gespeichert und können somit auch sprachübergreifend genutzt werden.
 Parser existieren in fast allen verfügbaren Programmiersprachen.
 
@@ -34,7 +34,7 @@ wodurch die Daten leicht  getrennt und nach unseren Bedürfnissen als JSON-Array
 
 ## SpaceGroupFactory
 
-Die SpaceGroupFactory wird benutzt um die benötigte Raumgruppe aus der lokal gespeicherten JSON-Datei zu erzeugen.
+Die SpaceGroupFactory wird benutzt, um die benötigte Raumgruppe aus der lokal gespeicherten JSON-Datei zu erzeugen.
 Dazu wird die Raumgruppe über ihre ID identifiziert und anhand ihrer Daten wird ein SpaceGroup-Object erstellt.
 Schwierigkeiten hierbei gab es bei den Transformationen, da diese als String in Koordinatentransformationen gespeichert sind:
 
@@ -47,7 +47,7 @@ Wir aber mit 4x4 Matrizen arbeiten.
  	0 	0 	Z 	0
  	0 	0 	0 	1
 
-Um die Koordinatentransformationen in die 4*4 Matrizen umzuwandeln wurden die Transformationen jeweils geparst und dann in Zeilenvektoren umgewandelt.
+Um die Koordinatentransformationen in die 4*4 Matrizen umzuwandeln, wurden die Transformationen jeweils geparst und dann in Zeilenvektoren umgewandelt.
 
 Dabei war die einheitliche Form der Transformationen ein großer Vorteil, da Konstante, Operator und Variable immer in einer festen Reihenfolge angeordnet waren und somit leichter getrennt werden konnten.
 Aus den Zeilenvektoren konnten nun die Transformationen in 4*4 Matrizen dargestellt werden.
@@ -55,5 +55,5 @@ Aus den Zeilenvektoren konnten nun die Transformationen in 4*4 Matrizen dargeste
 
 ##Gruppierung der Raumgruppen
 
-Die SpaceGroupFactory bietet neben dem Erstellen der Raumgruppen noch die Möglichkeit die Raumgruppen nach bestimmten Kriterien auszuwählen (Kristallsystem, Zentrierung).
+Die SpaceGroupFactory bietet neben dem Erstellen der Raumgruppen noch die Möglichkeit, die Raumgruppen nach bestimmten Kriterien auszuwählen (Kristallsystem, Zentrierung).
 Dabei wird wieder anhand der gesuchten Kriterien durch das JSON-Array iteriert und ein Set der angeforderten Transformationen zurückgegeben.

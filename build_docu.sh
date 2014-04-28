@@ -1,5 +1,5 @@
 #!/bin/bash
-files=( "title" "samuel" "david" "jakob" "andre" )
+files=("meta" "samuel" "david" "jakob" "andre" )
 
 for file in "${files[@]}"
 do
@@ -9,7 +9,9 @@ done > union_docu.md
 
 pandoc --filter pandoc-citeproc --toc --include-in-header src/titlesec.tex union_docu.md -o union_docu.pdf
 rm union_docu.md
-evince union_docu.pdf
+pdflatex ./src/title_wrapper.tex
+pdfunite ./title_wrapper.pdf union_docu.pdf final_documentation.pdf
+evince final_documentation.pdf
 
 
 
