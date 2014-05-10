@@ -264,7 +264,7 @@ Die Komposition dieser Implementierung erfüllt nicht die Forderung nach **Kompo
 
 Das Problem ist, dass in dieser naiven Implementierung die Komposition von Transformationen über eine Matrix-Multiplikation bewerkstelligt wird. Die Rundungsfehler der Fließkommazahlenrechnung machen diesen Algorithmus zu instabil um **Kompositionseindeutigkeit** garantieren zu können.
 
-Um dieses Problem zu umgehen, kann man sich zu Nutze machen, dass in Raumgruppen auf Grund der ???kristallographischen Restriktion??? sowohl Rotationen als auch Translationen nicht in beliebig kleinen Schritten vorkommen.
+Um dieses Problem zu umgehen, kann man sich zu Nutze machen, dass in Raumgruppen auf Grund der kristallographischen Restriktion sowohl Rotationen als auch Translationen nicht in beliebig kleinen Schritten vorkommen.
 Durch Runden des Ergebnisses auf den ggT dieser aller Rotationen bzw. Translationen kann dieses Problem umgangen werden. Dieses Prinzip des Rundens ist allerdings in der Matrix-Darstellung schwer zu bewerkstelligen.
 Für diesen Zweck wird intern eine andere Darstellung für Transformationen verwendet:
 
